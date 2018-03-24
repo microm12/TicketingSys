@@ -14,7 +14,7 @@ public class Main {
 		Queue q = new Queue(count);
 		
 		for (int i=0; i<A; i++) {
-			entrances[i] = new Entrance(i, q ,total, count);		// Δημιουργία εισόδων - threads
+			entrances[i] = new Entrance(i, q ,total);		// Δημιουργία εισόδων - threads
 			entrances[i].start();
 		}
 		

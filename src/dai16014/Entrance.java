@@ -7,7 +7,7 @@ public class Entrance extends Thread{
 	private Queue ppl;							// η ουρά με τους πελάτες
 	private Counter count;				        // μετρητής τιμής εισητηρίου - δείκτης της ουράς (synchronized)
 
-	public Entrance(int id, Queue people, Counter c, Counter exited){
+	public Entrance(int id, Queue people, Counter c){
 		this.id = id;
 		ppl = people;
 		count = c;
